@@ -1,0 +1,151 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>Food Restaurant</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style type="text/css">
+  .w3-display-container:hover{
+  -ms-transform: scale(1); /* IE 9 */
+  -webkit-transform: scale(1); /* Safari 3-8 */
+  transform: scale(1.3);
+  float: left;
+
+  }
+ 
+
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="#home" class="logo w3-button"><b>Food Restaurant </b></a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#home" class="w3-bar-item w3-button">Home</a>
+      <a href="#projects" class="w3-bar-item w3-button">Services</a>
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact Us</a>
+    </div>
+  </div>
+
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  
+  <img class="w3-image" src="{% static 'photos/h.jpg' %}" alt="Architecture" width="1500" height="800">
+  <div class="w3-display-middle w3-margin-top w3-center">
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+  <!-- Project Section -->
+  <div class="w3-container w3-padding-32" id="projects">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Services</h3>
+  </div>
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Special  Thali</div>
+        
+        <img src="{% static 'photos/6.jpg' %}" alt="House" style="width:101%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Panir  </div>
+        
+        <img src="{% static 'photos/12.jpg' %}" alt="House" style="width:102.4%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div id="fish" class="w3-display-topleft w3-black w3-padding">Makhni Handi</div>
+        
+        <img  src="{% static  'photos/2.jpg' %}" alt="House" style="width:100% ">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Dal Bati</div>
+        <img src="{% static  'photos/7.jpg' %}" alt="House" style="width:100%">
+      </div>
+    </div>
+  </div>
+<div class="inline-block">
+  <marquee behavior="scroll" scrollamount="23" style="">
+    
+    <img src="{% static 'photos/pani.jpg' %}" alt="Mountains" style="width:29.3%">
+    <img src="{% static 'photos/samosa.jpg' %}" alt="Mountains" style="width:29.3%">
+    <img src="{% static 'photos/berger.jpg' %}" alt="Mountains" style="width:30%">
+    <img src="{% static 'photos/piza.jpg' %}" alt="Mountains" style="width:30%">
+    <img src="{% static 'photos/kham.jpg' %}" alt="Mountains" style="width:29.36%">
+    <img src="{% static 'photos/momos.jpg' %}" alt="Mountains" style="width:23.53%">
+  </marquee>
+    </div>
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32" id="about">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
+    <p>Our sincere effort is to make your dining experience memorable by bringing to you centuries old Cuisine, and recipes from our mother’s kitchen.</p>
+      <p>We specialize in  Dal bati,and we provide an excellent choice of various  vegetables, lentils, breads, aromatic rice,  much more.
+    </p>
+    <p>Our extensive menu includes a fine collection of   traditional Indian dishes.</p>
+    
+  </div>
+  <h3>Chefs</h3><br>
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      
+      <img src="{% static 'photos/chef2.jpg' %}" alt="John" style="width:100%">
+      <h3>Arjun Patel</h3>
+      <p class="w3-opacity">★★★★☆</p>
+      <p>Best quality of chef are available in Restaurant. with 8 year of working experience.</p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+       
+      <img src="{% static 'photos/shef3.jpg' %}" alt="Jane" style="width:89%">
+      <h3>Abhishek Singh</h3>
+      <p class="w3-opacity">★★★☆☆</p>
+      <p>Best quality of chef are available in Restaurant. with 6 year of working experience.</p>
+    </div>
+    </div>
+<br>
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-32" id="contact">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact Us</h3>
+    <h3>Contact Information</h3>
+    <h4 style="color:red"><b>Address</b></h4 >
+    <p>Indore road, Depalpur, Indore-453115</p>
+   <h4 style="color:red"><b>Mobile</b></h4 >
+    <p>7471128436, 7471128437</p>
+    <h4 style="color:red"><b>Email</b></h4 >
+    <p>food@restaurant.com</p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <form action="#home" target="_blank">
+      <h3>Feedback</h3><br>
+      <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment">
+      <button class="w3-button w3-black w3-section" type="submit">
+        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+      </button>
+    </form>
+  </div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p>Powered by <a href="https:#" title="W3.CSS" target="_blank" class="w3-hover-text-green">Sbm</a></p>
+</footer>
+</body>
+</html>
